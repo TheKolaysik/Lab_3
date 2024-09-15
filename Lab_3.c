@@ -1,21 +1,18 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <locale.h>
+#define D1 2.54
+#define D2 2.32166
 
 
 int input_num() {
-	int num1, num2;
-	puts("введите число");
-	scanf("%d", &num1);
-	puts("Введено число А");
-	scanf("%d", &num2);
-	puts("Введено число В");
-	printf("Сумма: %i\n", num2 + num1);
-	printf("Разность: %i\n", num2 - num1);
-	printf("Остаток: %i\n", num2 % num1);
-	printf("Произведение: %i\n", num2 * num1);
-	printf("Частное: %i", num2 / num1);
-
+	int dym;
+	float result1, result2;
+	scanf("%d", &dym);
+	result1 = D1 * dym;
+	result2 = D2 * dym;
+	printf("%d англ. дюймов - это %.1f см\n", dym, result1);
+	printf("%d исп. дюймов - это %.1f см", dym, result2);
 }
 
 void main() {
