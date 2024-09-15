@@ -14,6 +14,7 @@ int input_num() {
 	printf("Разность: %i\n", num2 - num1);
 	printf("Остаток: %i\n", num2 % num1);
 	printf("Произведение: %i\n", num2 * num1);
+	printf("Частное: %i", num2 / num1);
 
 }
 
